@@ -30,6 +30,9 @@ fetch(`https://striveschool-api.herokuapp.com/books`)
       const buttonScarta = document.createElement("button");
       buttonScarta.classList.add("rounded-2", "bg-danger", "text-white", "border-0", "w-50");
       buttonScarta.innerText = "Scarta";
+      buttonScarta.addEventListener("click", () => {
+        colonna.remove();
+      });
 
       const titH2 = document.createElement("h2");
       titH2.classList.add("fs-5");
