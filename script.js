@@ -25,6 +25,10 @@ fetch(`https://striveschool-api.herokuapp.com/books`)
       const cBody = document.createElement("div");
       cBody.classList.add("card-body");
 
+      const buttonScarta = document.createElement("button");
+      buttonScarta.classList.add("rounded-2", "bg-danger", "text-white", "border-0");
+      buttonScarta.innerText = "Scarta";
+
       const titH2 = document.createElement("h2");
       titH2.innerText = card.title;
 
@@ -33,6 +37,7 @@ fetch(`https://striveschool-api.herokuapp.com/books`)
 
       cBody.appendChild(titH2);
       cBody.appendChild(prezzo);
+      cBody.appendChild(buttonScarta);
       cad.appendChild(cBody);
       colonna.appendChild(cad);
       container.appendChild(colonna);
