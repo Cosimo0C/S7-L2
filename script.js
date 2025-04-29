@@ -24,7 +24,7 @@ fetch(`https://striveschool-api.herokuapp.com/books`)
       cad.appendChild(img);
 
       const cBody = document.createElement("div");
-      cBody.classList.add("d-flex", "flex-column", "justify-content-evenly");
+      cBody.classList.add("d-flex", "flex-column", "justify-content-around");
       cBody.classList.add("card-body");
 
       const buttonScarta = document.createElement("button");
@@ -35,7 +35,7 @@ fetch(`https://striveschool-api.herokuapp.com/books`)
       });
 
       const titH2 = document.createElement("h2");
-      titH2.classList.add("fs-5");
+      titH2.classList.add("fs-4", "text-truncate");
       titH2.innerText = card.title;
 
       const prezzo = document.createElement("h4");
