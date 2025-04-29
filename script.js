@@ -14,7 +14,7 @@ fetch(`https://striveschool-api.herokuapp.com/books`)
       const card = cards[i];
 
       const colonna = document.createElement("div");
-      colonna.classList.add("col-md-4", "mb-4");
+      colonna.classList.add("col-sm-12", "col-md-5", "col-lg-3", "col-xl-2", "mb-4");
 
       const cad = document.createElement("div");
       cad.classList.add("card", "h-100");
