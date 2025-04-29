@@ -14,22 +14,25 @@ fetch(`https://striveschool-api.herokuapp.com/books`)
       const card = cards[i];
 
       const colonna = document.createElement("div");
-      colonna.classList.add("col-sm-12", "col-md-5", "col-lg-3", "col-xl-2", "mb-4");
+      colonna.classList.add("col-sm-12", "col-md-5", "col-lg-3", "col-xl-2", "mb-4", "border-0", "rounded-1");
 
       const cad = document.createElement("div");
       cad.classList.add("card", "h-100");
       const img = document.createElement("img");
+      img.classList.add("h-50");
       img.src = card.img;
       cad.appendChild(img);
 
       const cBody = document.createElement("div");
+      cBody.classList.add("d-flex", "flex-column", "justify-content-evenly");
       cBody.classList.add("card-body");
 
       const buttonScarta = document.createElement("button");
-      buttonScarta.classList.add("rounded-2", "bg-danger", "text-white", "border-0");
+      buttonScarta.classList.add("rounded-2", "bg-danger", "text-white", "border-0", "w-50");
       buttonScarta.innerText = "Scarta";
 
       const titH2 = document.createElement("h2");
+      titH2.classList.add("fs-5");
       titH2.innerText = card.title;
 
       const prezzo = document.createElement("h4");
