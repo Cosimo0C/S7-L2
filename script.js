@@ -14,7 +14,7 @@ fetch(`https://striveschool-api.herokuapp.com/books`)
       const card = cards[i];
 
       const colonna = document.createElement("div");
-      colonna.classList.add("col-sm-12", "col-md-5", "col-lg-3", "col-xl-2", "mb-4", "border-0", "rounded-1");
+      colonna.classList.add("col-12", "col-md-5", "col-lg-3", "col-xl-2", "mb-4", "border-0", "rounded-1");
 
       const cad = document.createElement("div");
       cad.classList.add("card", "h-100");
@@ -30,8 +30,8 @@ fetch(`https://striveschool-api.herokuapp.com/books`)
       const buttonScarta = document.createElement("button");
       buttonScarta.classList.add("rounded-2", "bg-danger", "text-white", "border-0", "w-50");
       buttonScarta.innerText = "Scarta";
-      buttonScarta.addEventListener("click", () => {
-        colonna.remove();
+      buttonScarta.addEventListener("click", (event) => {
+        event.currentTarget.closet("col-12").remove();
       });
 
       const titH2 = document.createElement("h2");
